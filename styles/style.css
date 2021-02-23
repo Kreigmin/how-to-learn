@@ -9,24 +9,24 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-h2, img {
+.border {
+  border: 1px solid red;
+}
+
+h1, h2, h3, img, p, header {
   margin: 0;
 }
 
 .flex-row {
   display: flex;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
 }
 
+/* Начало header */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  margin: 0;
-  /* выше установили ограничения для секции */
 }
 
 .logo {
@@ -42,12 +42,12 @@ h2, img {
 }
 
 .header__title {
-  align-self: center;
-  margin-left: 64px;
+  margin: auto 0 auto 64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -58,11 +58,13 @@ h2, img {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  z-index: 2;
 }
 
 .header__main-illustration {
@@ -74,7 +76,6 @@ h2, img {
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   right: 0;
@@ -83,11 +84,46 @@ h2, img {
   width: 568px;
   background-color: #2f80ed;
 }
+/* Конец header */
 
+/* Начало секции description */
 .two-columns {
-  background-color: #fff;
+  width: 80%;
+  min-height: 300px;
+  margin: 100px auto;
+  justify-content: space-between;
 }
 
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-clumns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.two-clumns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
