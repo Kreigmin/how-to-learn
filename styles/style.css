@@ -9,10 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* .border {
-  border: 1px solid red;
-} */
-
 h1, h2, h3, img, p, header, footer, ul, li, a {
   margin: 0;
 }
@@ -115,7 +111,7 @@ h1, h2, h3, img, p, header, footer, ul, li, a {
   min-width: 784px;
 }
 
-.two-clumns__paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -123,7 +119,7 @@ h1, h2, h3, img, p, header, footer, ul, li, a {
   color: #000;
 }
 
-.two-clumns__paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
@@ -181,14 +177,14 @@ h1, h2, h3, img, p, header, footer, ul, li, a {
   font-weight: bold;
 }
 
-.table-text{
+.table__text{
   margin-bottom: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.table-text:last-of-type {
+.table__text:last-of-type {
   margin-bottom: 0;
 }
 /* Конец секции digits */
@@ -238,7 +234,7 @@ h1, h2, h3, img, p, header, footer, ul, li, a {
   z-index: 1;
 }
 
-.feynman__image {
+.feynman__img {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -250,8 +246,7 @@ h1, h2, h3, img, p, header, footer, ul, li, a {
   position: relative;
   align-items: center;
   overflow: hidden;
-  margin: 0 auto;
-  padding: 90px 0;
+  /* padding: 90px 0; */
   background-color: #1f1f1f;
 }
 
@@ -264,9 +259,16 @@ h1, h2, h3, img, p, header, footer, ul, li, a {
 
 .table_theme_dark {
   z-index: 1;
+  margin-bottom: 90px;
 }
 
-.section-title_theme_dark, .section-subtitle_theme_dark {
+.section-title_theme_dark {
+  margin-top: 90px;
+  color: #fff;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
   color: #fff;
   z-index: 1;
 }
