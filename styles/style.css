@@ -256,7 +256,7 @@
   position: relative;
   align-items: center;
   overflow: hidden;
-  /* padding: 90px 0; */
+  padding: 90px 0;
   background-color: #1f1f1f;
   z-index: 1;
 }
@@ -273,12 +273,9 @@
 
 .table_theme_dark {
   display: flex;
-
-  margin-bottom: 90px;
 }
 
 .section-title_theme_dark {
-  margin-top: 90px;
   color: #fff;
 
 }
