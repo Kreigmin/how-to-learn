@@ -17,7 +17,6 @@
   max-height: 756px;
   position: relative;
   background-color: #f2f2f2;
-  z-index: 2;
 }
 
 .logo {
@@ -40,6 +39,7 @@
   font-size: 102px;
   font-weight: 700;
   color: #000;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -52,6 +52,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #000;
+  z-index: 2;
 }
 
 .header__link {
@@ -81,7 +82,6 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  z-index: -1;
 }
 /* Конец header */
 
